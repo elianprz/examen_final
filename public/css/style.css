@@ -1,0 +1,142 @@
+:root {
+    --color-orange: #F2630D;
+    --color-dark-gray: #3D4249;
+    --color-steel-blue: #6F8191;
+    --color-light-gray: #CBD2D9;
+    --color-light-gray-text: #D1D1D1; /* Gris claro para los títulos */
+    --color-dark-gray-text: #4A4A4A; /* Gris oscuro para las descripciones */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-light-gray);
+    color: var(--color-dark-gray);
+    padding-bottom: 60px; /* Espacio para el footer */
+}
+
+header {
+    background-color: var(--color-steel-blue); /* Fondo del header */
+    color: var(--color-light-gray); /* Color del texto en el header */
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 1.2em;
+    color: var(--color-light-gray);
+}
+
+#profile img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+nav {
+    background-color: var(--color-dark-gray); /* Fondo del menú de navegación */
+    padding: 10px 0;
+}
+
+nav a {
+    color: var(--color-light-gray); /* Color del texto en los enlaces */
+    text-decoration: none;
+    padding: 15px 20px;
+    display: inline-block;
+    font-size: 1.1em;
+}
+
+nav a:hover {
+    background-color: var(--color-orange); /* Color de fondo al pasar el ratón por encima */
+    color: var(--color-light-gray);
+}
+
+.header-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2; /* Transparencia de la imagen de fondo */
+    z-index: -1; /* Colocar detrás del contenido */
+}
+
+section {
+    padding: 20px;
+    margin: 10px;
+    background-color: var(--color-steel-blue);
+    color: var(--color-light-gray);
+    border-radius: 5px;
+}
+
+.portfolio-item {
+    display: flex;
+    align-items: center; /* Alinea verticalmente al centro */
+    justify-content: flex-start; /* Alinea horizontalmente al inicio */
+    margin-bottom: 20px;
+    background-color: var(--color-dark-gray);
+    color: var(--color-light-gray);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.portfolio-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+    border-radius: 5px;
+}
+
+.portfolio-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra el texto verticalmente */
+    flex: 1;
+}
+
+.portfolio-text h3 {
+    margin: 0 0 10px 0;
+    color: var(--color-light-gray-text);
+}
+
+.portfolio-text p {
+    margin: 0;
+    color: #d1d1d1;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--color-dark-gray);
+    color: var(--color-light-gray);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    background-color: var(--color-light-gray); /* Color del fondo de la barra */
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.progress {
+    background-color: var(--color-dark-gray); /* Color de la barra de progreso */
+    height: 20px;
+    border-radius: 5px;
+}
